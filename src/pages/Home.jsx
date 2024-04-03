@@ -7,6 +7,8 @@ import { techImage } from "../ImagesData";
 import Slider from "../Component/Slider/index";
 import backOpacity from "../assets/back-opacity.svg";
 import { TypeAnimation } from "react-type-animation";
+import tea from '../assets/tea.svg'
+import line from '../assets/line.svg'
 Typography;
 const Home = () => {
   console.log(techImage);
@@ -16,12 +18,12 @@ const Home = () => {
       <Navbar />
 
       {/* Seaction 0 */}
-      <Grid container spacing={2} sx={{ width: "90%", margin: "auto" }}>
+      <Grid container spacing={2} sx={{ width: "90%", margin: "auto" ,marginBottom:'1rem'}}>
         <Grid item xs={10} md={8}>
-          <h1 className="plane-text">Tech Beyond Limits</h1>
+          <h1 className="plane-text ">Tech Beyond Limits</h1>
         </Grid>
         <Grid item xs={2} md={4} textAlign={'end'}>
-          <img src={planeTea} alt="" loading="lazy" className="sect0-img1"/>
+          <img src={planeTea} alt="" loading="lazy" className="sect0-img1 dice-zoom"/>
         </Grid>
         <Grid item xs={12} sx={{display:{md:'flex',},justifyContent:{md:'end',sm:'center'},flexWrap:'wrap',}}>
           <p className="plane-text-p">
@@ -33,6 +35,7 @@ const Home = () => {
           </p>
         </Grid>
       </Grid>
+   
       {/* seaction 1 */}
       <Box className="journey-sect" >
         <Box >
@@ -58,8 +61,10 @@ const Home = () => {
       </Box>
 
       {/* Seaction 3 */}
-      <Box className="footer-above-sect">
+      <Box className='footer-above'>
         {/* <img src={backOpacity} alt="" loading="lazy"/> */}
+        <Box className="footer-above-sect">
+        <img src={tea} alt="" className="dice-zoom"style={{marginBottom:'1rem'}} />
         <Typography  className="footer-above-h" sx={{fontSize:{md:'80px',xs:'2rem'},fontFamily:'"Space Grotesk", sans-serif'}}>
           Interested in Working
         </Typography>
@@ -67,6 +72,8 @@ const Home = () => {
           With Us?
         </Typography>
         <button className="footer-above-btn">LAUNCH IT</button>
+        </Box>
+        <img src={line} alt="" className="dice-zoom line-img"/>
       </Box>
       {/* Footer seaction */}
       <Footer />

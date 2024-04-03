@@ -31,14 +31,11 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover; */
     background-size: cover;
     height: 100%;
     width: 100%;
     color: var(--blue);
     text-align: center;
-    /* text-transform: uppercase; */
-    /* line-height: 45px; */
     margin-bottom: 5px;
 }
 .css-17zjp61{
@@ -63,17 +60,24 @@
 }
 /* above seaction footer */
 .footer-above-sect{
-    background: #192533;
-    padding: 30px 0px 30px 0px;
-    width: 100%;
-    min-height: 480px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+   
+}
+.footer-above{
+    background: #192533;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    min-height: 480px;
+    background-image: url('./assets/back-opacity.svg');
+}
+.footer-above .line-img{
+    width: 400px;
 }
 .footer-above-h{
-    font-family: "Space Grotesk", sans-serif;
+    /* font-family: "Space Grotesk", sans-serif; */
     font-size: 80px;
     font-weight: normal;
     text-align: center;
@@ -94,29 +98,27 @@
     border: 1px solid var(--green);
   margin-top: 2rem;
 }
-
+.dice-zoom {
+    animation: scale 4s linear infinite;
+  }
+  @keyframes scale {
+    50% {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
 @media screen and (min-width:320px) and (max-width:600px){
     .plane-text{
-        font-family: "Marcellus", serif;
         font-size: 28px;
-        font-weight: normal;
-        text-align: left;
-        text-transform: capitalize;
         line-height: 50px;
-        color: #1e2226;
+      
     }
     .sect0-img1{
         width: 50px;
         height: 50px;
-    }
-    .plane-text-p {
-        font-size: 15px;
-        font-weight: normal;
-        text-align: left;
-        line-height: 25px;
-        color: #1e2226;
-        font-family: "Space Grotesk";
-        width: 100%;
     }
     .journey-sect-h {
         font-weight: 500;
@@ -127,12 +129,6 @@
         width: 80%;
     }
     .plane-text-p{
-        font-size: 15px;
-        font-weight: normal;
-        text-align: left;
-        line-height: 25px;
-        color: #1e2226;
-        font-family: "Space Grotesk";
         width: 80%;
         margin: auto;
     }
@@ -140,38 +136,24 @@
         display: flex;
         gap: 2rem;
     }
-    
+    .footer-above .line-img{
+        display: none;
+    }
     .footer-above-sect {
         background: #192533;
         padding: 30px 0px 30px 0px;
         width: 100%;
         min-height: 200px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
     }
  
     .footer-above-h{
-        font-family: "Space Grotesk", sans-serif;
         font-size: 40px;
-        font-weight: normal;
-        text-align: center;
-        line-height: 90px;
-        color: #ffffff;
-        margin-bottom: 30px;
     }
 }
 
 
 @media screen and (min-width:601px) and (max-width:900px){
     .plane-text-p{
-        font-size: 15px;
-        font-weight: normal;
-        text-align: left;
-        line-height: 25px;
-        color: #1e2226;
-        font-family: "Space Grotesk";
         width: 100%;
         margin: auto;
     }

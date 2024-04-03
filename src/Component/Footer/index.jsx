@@ -13,18 +13,18 @@ const index = () => {
       <Grid container  >
         <Grid item  xs={12} md={6}>
           <Grid item xs={12} md={12} >
-            <img src={serviceBox} alt="" loading="lazy" />
+            <img src={serviceBox} alt="" loading="lazy" className="dice-zoom"/>
           </Grid>
           <Grid item md={12} xs={12} sx={{ display: "flex", justifyContent: "center",alignContent:'center' }}  >
             <img
               src={footerLogo}
               alt=""
               loading="lazy"
-              className="footer-img1"
+              className="footer-img1 "
             />
           </Grid>
           <Grid xs={12} sx={{ display: {md:'flex',xs:'none'}, justifyContent: "end" }}>
-            <img src={dice} alt="" loading="lazy" />
+            <img src={dice} alt="" loading="lazy" className="dice-zoom"/>
           </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
