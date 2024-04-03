@@ -1,0 +1,30 @@
+.language-box{
+    width: 100%;
+    border-radius: 2px;
+    border: 0.972px solid var(--blue);
+    background: #ede7d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: -7.77271px 7.77271px 0px 0px #192533;
+    
+}
+.language-box img{
+    width: 100px !important;
+    height: 100px;
+    
+}
+.language-box-shadow{
+    box-shadow: -7.77271px -7.77271px 0px 0px #192533 !important;
+    margin-left: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}

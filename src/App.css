@@ -1,0 +1,19 @@
+
+.plane-text{
+    font-family: "Marcellus", serif;
+    font-size: 90px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 100px;
+    color: #1e2226;
+}
+.plane-text-p{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 25px;
+    color: #1e2226;
+    font-family: "Space Grotesk";
+    width: 37%;
+}
