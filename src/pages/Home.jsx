@@ -1,27 +1,30 @@
 import React from "react";
 import Navbar from "../Component/Navbar/NavBar";
 import Footer from "../Component/Footer/index";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import planeTea from "../assets/plane-tea.svg";
 import { techImage } from "../ImagesData";
-import Slider from '../Component/Slider/index'
+import Slider from "../Component/Slider/index";
+import backOpacity from "../assets/back-opacity.svg";
+import { TypeAnimation } from "react-type-animation";
+Typography;
 const Home = () => {
-  console.log(techImage)
+  console.log(techImage);
   return (
     <div>
       {/* Navbar Seaction */}
       <Navbar />
-      
-      {/* Seaction 1 */}
-      <Grid container spacing={2} sx={{width:'90%',margin:'auto'}}>
-        <Grid item xs={8}>
+
+      {/* Seaction 0 */}
+      <Grid container spacing={2} sx={{ width: "90%", margin: "auto" }}>
+        <Grid item xs={10} md={8}>
           <h1 className="plane-text">Tech Beyond Limits</h1>
         </Grid>
-        <Grid item xs={4}>
-          <img src={planeTea} alt="" loading="lazy" />
+        <Grid item xs={2} md={4} textAlign={'end'}>
+          <img src={planeTea} alt="" loading="lazy" className="sect0-img1"/>
         </Grid>
-        <Grid item xs={12} sx={{display:'flex',justifyContent:'end'}}>
-          <p className="plane-text-p" >
+        <Grid item xs={12} sx={{display:{md:'flex',},justifyContent:{md:'end',sm:'center'},flexWrap:'wrap',}}>
+          <p className="plane-text-p">
             We are dedicated to pushing boundaries and exploring the boundless
             possibilities of technology. Join us on a journey where innovation
             knows no limits. With us, you'll enter a realm of endless
@@ -30,12 +33,41 @@ const Home = () => {
           </p>
         </Grid>
       </Grid>
-
+      {/* seaction 1 */}
+      <Box className="journey-sect" >
+        <Box >
+          <h1 className="journey-sect-h">
+            EFFICIENCY IN <span style={{ color: "#C46060" }}>EVERY</span>
+            <br /> BYTE.
+          </h1>
+        </Box>
+        <Box sx={{width:{md:'39%',sm:'80%'}}}>
+          <TypeAnimation
+          className="journey-p"
+            sequence={[
+              "Employing a streamlined and cohesive strategy, we meticulously manage our projects, guaranteeing impeccable deliverables within designated timelines. Our approach focuses on maintaining seamless processes to achieve flawless outcomes consistently.",
+            ]}
+            // style={{ fontSize: "2em" }}
+            // repeat={Infinity}
+          />
+        </Box>
+      </Box>
       {/* Seaction 2 */}
       <Box>
-        <Slider/>
+        <Slider />
       </Box>
 
+      {/* Seaction 3 */}
+      <Box className="footer-above-sect">
+        {/* <img src={backOpacity} alt="" loading="lazy"/> */}
+        <Typography  className="footer-above-h" sx={{fontSize:{md:'80px',xs:'2rem'},fontFamily:'"Space Grotesk", sans-serif'}}>
+          Interested in Working
+        </Typography>
+        <Typography className="footer-above-h" sx={{fontSize:{md:'80px',xs:'2rem'},fontFamily:'"Space Grotesk", sans-serif'}}>
+          With Us?
+        </Typography>
+        <button className="footer-above-btn">LAUNCH IT</button>
+      </Box>
       {/* Footer seaction */}
       <Footer />
     </div>

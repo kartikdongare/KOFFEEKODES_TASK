@@ -10,12 +10,12 @@ Typography;
 const index = () => {
   return (
     <Box sx={{ flexGrow: 1 ,backgroundColor:'#ede7d9',paddingBottom:'1rem',marginTop:'.5rem'}}>
-      <Grid container spacing={4} sx={{borderBottom:'2px solid black'}}>
-        <Grid item xs={6}>
-          <Grid xs={12}>
+      <Grid container  >
+        <Grid item  xs={12} md={6}>
+          <Grid item xs={12} md={12} >
             <img src={serviceBox} alt="" loading="lazy" />
           </Grid>
-          <Grid xs={12} sx={{ display: "flex", justifyContent: "center" }}>
+          <Grid item md={12} xs={12} sx={{ display: "flex", justifyContent: "center",alignContent:'center' }}  >
             <img
               src={footerLogo}
               alt=""
@@ -23,19 +23,18 @@ const index = () => {
               className="footer-img1"
             />
           </Grid>
-          <Grid xs={12} sx={{ display: "flex", justifyContent: "end" }}>
+          <Grid xs={12} sx={{ display: {md:'flex',xs:'none'}, justifyContent: "end" }}>
             <img src={dice} alt="" loading="lazy" />
-            {/* <img src={footerLogo} alt="" loading="lazy"/> */}
           </Grid>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <h1 className="newsletter">Join Our Newsletter</h1>
           <p className="newpapar">
             Subscribe to our newsletter for the latest updates, trends, and
             insights delivered straight to your inbox.
           </p>
           <div className="text-box">
-            <input type="email" name="email" className="footer-input" />
+            <input type="email" name="email" className="footer-input" placeholder="Enter Your Email"/>
             <span>
               <button className="footer-btn">
                 <img src={footerBtn} alt="" loading="lazy" />
@@ -43,8 +42,7 @@ const index = () => {
             </span>
           </div>
         </Grid>
-      </Grid>
-      <Grid className="foter-social"> 
+        <Grid item className="foter-social" sx={{borderTop:'2px solid black',width:'100%',marginTop:3,paddingTop:3}}> 
         <p className="footerPara">©2020 All Rights Reserved. Koffeekodes® is a registered trademark. Privacy | Terms | Legal | Cookie Preferences</p>
         <div className="social-icon-border">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
@@ -53,6 +51,8 @@ const index = () => {
         <i class="fa fa-telegram" aria-hidden="true"></i>
         </div>
       </Grid>
+      </Grid>
+      
     </Box>
   );
 };

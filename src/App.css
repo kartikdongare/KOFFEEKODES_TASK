@@ -1,4 +1,4 @@
-
+/* below navbar seaction */
 .plane-text{
     font-family: "Marcellus", serif;
     font-size: 90px;
@@ -16,4 +16,163 @@
     color: #1e2226;
     font-family: "Space Grotesk";
     width: 37%;
+}
+.rfm-initial-child-container{
+    display: flex;
+    gap: 2rem;
+}
+.journey-sect{
+    background: url('./assets/journy-bg.svg') no-repeat center center #ede7d9;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* -webkit-background-size: cover; */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: var(--blue);
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* line-height: 45px; */
+    margin-bottom: 5px;
+}
+.css-17zjp61{
+    width: unset;
+    width: 37%;
+}
+
+.journey-sect-h{
+   font-weight: 800;
+    font-size: 50px !important;
+    line-height: 60px !important;
+}
+.journey-p{
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    width: 50%;
+    z-index: 1;
+}
+/* above seaction footer */
+.footer-above-sect{
+    background: #192533;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-above-h{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 80px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 90px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.footer-above-btn{
+    border-radius: 5px;
+    background: var(--green);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid var(--green);
+  margin-top: 2rem;
+}
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .plane-text{
+        font-family: "Marcellus", serif;
+        font-size: 28px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: capitalize;
+        line-height: 50px;
+        color: #1e2226;
+    }
+    .sect0-img1{
+        width: 50px;
+        height: 50px;
+    }
+    .plane-text-p {
+        font-size: 15px;
+        font-weight: normal;
+        text-align: left;
+        line-height: 25px;
+        color: #1e2226;
+        font-family: "Space Grotesk";
+        width: 100%;
+    }
+    .journey-sect-h {
+        font-weight: 500;
+        font-size: 24px !important;
+        line-height: 35px !important;
+    }
+    .css-17zjp61 {
+        width: 80%;
+    }
+    .plane-text-p{
+        font-size: 15px;
+        font-weight: normal;
+        text-align: left;
+        line-height: 25px;
+        color: #1e2226;
+        font-family: "Space Grotesk";
+        width: 80%;
+        margin: auto;
+    }
+    .rfm-initial-child-container{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .footer-above-sect {
+        background: #192533;
+        padding: 30px 0px 30px 0px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer-above-h{
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 40px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 90px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:900px){
+    .plane-text-p{
+        font-size: 15px;
+        font-weight: normal;
+        text-align: left;
+        line-height: 25px;
+        color: #1e2226;
+        font-family: "Space Grotesk";
+        width: 100%;
+        margin: auto;
+    }
 }
